@@ -4,7 +4,8 @@ let userEta = parseInt (prompt('Inserisci la tua eta'));
 console.log(userEta);
 const prezzoPerKm = 0.21;
 console.log(prezzoPerKm);
-let prezzo ;
+let prezzo;
+let prezzoFinale = document.getElementById("prezzofinale") ;
 
 if (userEta < 18){
     prezzo = (kmDaPerCorrere * 0.8 * 0.21).toFixed(2);
@@ -16,3 +17,4 @@ if (userEta < 18){
     prezzo = (kmDaPerCorrere * 0.21).toFixed(2);
     console.log(prezzo);
 }
+prezzoFinale.innerText = "il prezzo del biglietto e: " +  prezzo + "$";
