@@ -8,6 +8,8 @@ calcolo del prezzo del biglietto del treno
      il prezzo del biglietto è definito in base ai km (0.21 € al km)
     - se se e minorene va applicato uno sconto del 20% 
         km * 0.8 * 0.21 $
+        0.8 perche? sapendo che il prezzo finale e ( 100% - % sconto ) / 100
+        (100% - 20 %)/ 100 = 0.8
     - se over 65 va applicato uno sconto del 40% 
         km * 0.6 * 0.21 $
     - altrimenti prezzo pieno
